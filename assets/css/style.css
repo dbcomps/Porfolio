@@ -79,10 +79,42 @@ section {
 	padding: 50px;
 }
 
+.hero {
+	background-image: url("../images/pexels-felix-mittermeier-956981.jpg");
+/* 	Photo by Felix Mittermeier: https://www.pexels.com/photo/blue-universe-956981/ */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	background-attachment: fixed;
+  background-position: 80%;
+}
 
+.hero-cool-subtitle {
+	width: 60%;
+	text-align: center;
+	line-height: 1.6;
+}
 
+.hero-cool-subtitle h2 {
+	font-size: 36px;
+	text-align: left;
+}
 
+.hero-cool-subtitle p {
+	text-align: left;
+}
 
+.hero-picture {
+	width: 40%;
+	padding: 25px;
+}
+
+.hero-picture img {
+	width: 80%;
+}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -110,6 +142,20 @@ section {
 	
 	footer h2, footer div {
 		text-align: center;
+		width: 100%;
+	}
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+	.hero-cool-subtitle {
+		width: 100%;
+	}
+	.hero-cool-subtitle p {
+		width: 100%;
+	}
+	.hero-picture {
 		width: 100%;
 	}
 	
