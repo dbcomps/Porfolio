@@ -25,7 +25,6 @@ header {
   flex-wrap: wrap;
   top: 0;
   background-attachment: fixed;
-
 }
 
 header h1 {
@@ -69,8 +68,59 @@ header nav ul li a:hover {
 /*   border-radius: 10px; */
   text-shadow: none;
 }
-
 /* end of header/navbar styles */
+
+
+/* footer styles */
+
+footer {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	margin: 0;
+}
+
+footer h2 {
+  color: var(--primary-color);
+  font-size: 28px;
+  margin: 0;
+  padding: 0 40px;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 52px;
+  color: var(--primary-color);
+  margin: 5px 0;
+  padding: 5px 50px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--tertiary-color);
+}
+
+footer a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+footer div ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+
+
+footer div ul li a {
+  padding: 10px 15px;
+  font-weight: medium;
+  font-size: 1.7vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-bottom: solid;
+}
+
+/* end footer styles */
 
 section {
 	padding: 0;
@@ -150,10 +200,32 @@ section {
 		padding: 10px 15px;
 		}
 	
-	footer h2, footer div {
-		text-align: center;
+	footer {
+		padding-bottom: 0;
+		justify-content: center;
+/* 		position: relative; */
+	}
+	
+/* 
+	footer h2 {
 		width: 100%;
 	}
+ */
+
+	
+	footer div ul {
+		margin-top: 10px;
+		width: 100%;
+		justify-content: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	footer div ul li a {
+		font-size: 18px;
+		padding: 10px 15px;
+		}
+	
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -168,13 +240,16 @@ section {
 		margin-right: 0;
 		width: 100%;
 	}
+	
+		footer h2 {
+		text-align: center;
+	}
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
 	header nav ul {
-	
 		justify-content: center;
 	}
 	
@@ -183,7 +258,6 @@ section {
 		padding-right: 0;
 		margin-left: 0;
 		margin-right: 0;
-
 	}
 
 	header nav ul li a {
@@ -191,6 +265,20 @@ section {
 		padding: none;
 		font-size: 14px;
 	}
+
+	footer div ul li a {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	footer div ul li a {
+		margin: none;
+		padding: none;
+		font-size: 14px;
+	}
+
 
 	.hero-cool-subtitle {
 		width: 100%;
