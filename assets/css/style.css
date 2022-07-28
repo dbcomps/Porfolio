@@ -3,6 +3,7 @@
 	--secondary-color: #ff9800;
 	--tertiary-color: #C5CAE9;
 	--fourth-color: #263238;
+	--sectfontsize: 44px;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-family: Helvetica, Arial, sans-serif;
   background-color: var(--fourth-color);
 }
@@ -82,19 +83,8 @@ footer {
 
 footer h2 {
   color: var(--primary-color);
-  font-size: 28px;
   margin: 0;
   padding: 0 40px;
-}
-
-header h1 {
-  font-weight: bold;
-  font-size: 52px;
-  color: var(--primary-color);
-  margin: 5px 0;
-  padding: 5px 50px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: var(--tertiary-color);
 }
 
 footer a {
@@ -110,8 +100,6 @@ footer div ul {
 	list-style: none;
 }
 
-
-
 footer div ul li a {
   padding: 10px 15px;
   font-weight: medium;
@@ -126,6 +114,8 @@ section {
 	padding: 0;
 }
 
+
+/* hero styles start*/
 .hero {
 	background-image: url("../images/pexels-felix-mittermeier-956981.jpg");
 /* 	Photo by Felix Mittermeier: https://www.pexels.com/photo/blue-universe-956981/ */
@@ -165,21 +155,49 @@ section {
 
 .hero-cool-subtitle p {
 	text-align: right;
+	color: var(--tertiary-color);
+}
+/* end hero styles */
+
+
+/* start about me styles */
+
+.about-me {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 
-/* 
-.hero-picture {
-	width: 20%;
-	height: auto;
-	padding: 0;
+.about-me-left {
+	justify-content: start;
+	align-content: center;
+	border-right: solid;
+/* 	width: 10%; */
 }
- */
 
-/* 
+.about-me-right {
+	color: var(--tertiary-color);
+	justify-content: end;
+	width: 80%;
+	border: none;
+}
+
+
 .hero-picture img {
-	object-fit: contain;
+	margin: 0;
+	justify-content: start;
+
 }
- */
+
+.hero-cool-subtitle {
+
+	text-align: right;
+	line-height: 1.6;
+}
+
+
+/* end ABOUT ME styles */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -219,12 +237,6 @@ section {
 /* 		position: relative; */
 	}
 	
-/* 
-	footer h2 {
-		width: 100%;
-	}
- */
-
 	
 	footer div ul {
 		margin-top: 10px;
@@ -238,6 +250,8 @@ section {
 		font-size: 18px;
 		padding: 10px 15px;
 		}
+
+
 
 /* end for width 980px */	
 }
@@ -258,6 +272,17 @@ section {
 	
 		footer h2 {
 		text-align: center;
+	}
+	
+	.about-me-left {
+		justify-content: center;
+		text-align: center;
+		border: none;
+		width: 100%;
+	}
+
+	.about-me-right {
+		width: 100%;
 	}
 	
 }
