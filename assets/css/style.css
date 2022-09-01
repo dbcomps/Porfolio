@@ -108,6 +108,11 @@ footer div ul li a {
   border-bottom: solid;
 }
 
+#onit-home {
+	width: 30%;
+	max-height: 400px;
+}
+
 /* end footer styles */
 
 section {
@@ -185,7 +190,7 @@ section {
 	justify-content: start;
 	align-content: center;
 	border-right: solid;
-/* 	width: 10%; */
+	width: 10%;
 }
 
 .about-me-right {
@@ -208,13 +213,14 @@ section {
 }
 
 .projects-left {
-	justify-content: start;
+	justify-content: left;
 	align-content: center;
 	border-right: solid;
+	width: 10%;
 }
 
 .projects-right {
-	justify-content: end;
+	justify-content: right;
 	width: 80%;
 	border: none;
 }
